@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 100% 0 0;
+    --foreground: 27.81% 0.03 256.85;
+
+    --card: 100% 0 0;
+    --card-foreground: 27.81% 0.03 256.85;
+
+    --popover: 100% 0 0;
+    --popover-foreground: 27.81% 0.03 256.85;
+
+    --primary: 49.12% 0.3096 275.75;
+    --primary-foreground: 100% 0 0;
+
+    --secondary: 69.71% 0.329 342.55;
+    --secondary-foreground: 27.81% 0.03 256.85;
+
+    --muted: 97.03% 0 0;
+    --muted-foreground: 60.81% 0.03 256.85;
+
+    --accent: 76.76% 0.184 183.61;
+    --accent-foreground: 27.81% 0.03 256.85;
+
+    --destructive: 71.77% 0.176 22.16;
+    --destructive-foreground: 27.81% 0.03 256.85;
+
+    --neutral: 97.03% 0 0;
+    --neutral-foreground: 27.81% 0.03 256.85;
+
+    --base-100: 100% 0 0;
+    --base-200: 96.12% 0 0;
+    --base-300: 92.42% 0.001 197.14;
+
+    --border: 92.19% 0 0;
+    --input: 92.19% 0 0;
+    --ring: 27.81% 0.03 256.85;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 25.33% 0.016 252.42;
+    --foreground: 74.65% 0.022 264.44;
+
+    --card: 25.33% 0.016 252.42;
+    --card-foreground: 74.65% 0.022 264.44;
+
+    --popover: 25.33% 0.016 252.42;
+    --popover-foreground: 74.65% 0.022 264.44;
+
+    --primary: 65.69% 0.196 275.75;
+    --primary-foreground: 27.33% 0.016 252.42;
+
+    --secondary: 74.8% 0.26 342.55;
+    --secondary-foreground: 27.33% 0.016 252.42;
+
+    --muted: 35.33% 0.016 252.42;
+    --muted-foreground: 54.65% 0.022 264.44;
+
+    --accent: 74.51% 0.167 183.61;
+    --accent-foreground: 27.33% 0.016 252.42;
+
+    --destructive: 71.77% 0.176 22.16;
+    --destructive-foreground: 27.33% 0.016 252.42;
+
+    --neutral: 31.38% 0.021 254.14;
+    --neutral-foreground: 74.65% 0.022 264.44;
+
+    --base-100: 25.33% 0.016 252.42;
+    --base-200: 23.26% 0.014 253.1;
+    --base-300: 21.15% 0.012 254.09;
+
+    --border: 35.65% 0.022 264.44;
+    --input: 35.65% 0.022 264.44;
+    --ring: 74.65% 0.022 264.44;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  ::-webkit-scrollbar {
+    @apply h-[0.4rem] w-[0.4rem];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-base-300 dark:bg-border;
+  }
+
+  ::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent shadow-none;
+  }
+}
+
+@layer utilities {
+  .step {
+    counter-increment: step;
+  }
+
+  .step:before {
+    @apply absolute inline-flex h-9 w-9 items-center justify-center rounded-full border-4 border-background bg-muted text-center -indent-px font-mono text-base font-medium;
+    @apply ml-[-50px] mt-[-4px];
+    content: counter(step);
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
