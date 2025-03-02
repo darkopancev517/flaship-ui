@@ -5,17 +5,21 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { ModeToggleButton } from "@/components/mode-toggle"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { Badge } from "@/components/ui/badge"
 
 function Navbar() {
   return (
     <header className="top sticky z-50 bg-background px-8 2xl:px-16">
       <div className="flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-1">
-          <Icons.logo className="size-7" />
-          <div className="flex items-center space-x-1">
-            <span className="text-lg font-bold">Flaship UI</span>
-          </div>
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/" className="flex items-center space-x-1">
+            <Icons.logo className="size-7" />
+            <div className="flex items-center space-x-1">
+              <span className="text-lg font-bold">Flaship UI</span>
+            </div>
+          </Link>
+          <Badge variant="outline">v0.7.4</Badge>
+        </div>
         <div className="flex items-center gap-4">
           <div className="pt-1.5">
             <Link href="/" target="_blank" rel="noreferrer">
