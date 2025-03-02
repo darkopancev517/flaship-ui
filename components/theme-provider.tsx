@@ -3,8 +3,8 @@
 import * as React from "react"
 import { Provider as JotaiProvider } from "jotai"
 import {
-  useTheme, 
-  ThemeProvider as NextThemeProvider, 
+  useTheme,
+  ThemeProvider as NextThemeProvider,
   ThemeProviderProps as NextThemeProviderProps,
 } from "next-themes"
 import NextTopLoader from "nextjs-toploader"

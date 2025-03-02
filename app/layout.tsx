@@ -53,10 +53,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           "min-h-screen font-sans antialiased",
           fontHero.variable,
           fontHeading.variable,
-          fontSans.variable,
+          fontSans.variable
         )}
       >
-
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
