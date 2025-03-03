@@ -18,6 +18,7 @@ import ButtonLink from "@/components/examples/button-link"
 import ButtonGhost from "@/components/examples/button-ghost"
 import ButtonWithIcon from "@/components/examples/button-with-icon"
 import ButtonLoading from "@/components/examples/button-loading"
+import DatePickerDemo from "@/components/examples/date-picker-demo"
 
 export default function ExamplesPage() {
   return (
@@ -80,6 +81,9 @@ export default function ExamplesPage() {
                 <Button size="lg">Large</Button>
                 <Button size="sm">Small</Button>
               </div>
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <DatePickerDemo />
             </ComponentWrapper>
           </div>
         </div>
