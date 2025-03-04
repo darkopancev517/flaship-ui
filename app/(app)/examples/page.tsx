@@ -19,6 +19,35 @@ import ButtonGhost from "@/components/examples/button-ghost"
 import ButtonWithIcon from "@/components/examples/button-with-icon"
 import ButtonLoading from "@/components/examples/button-loading"
 import DatePickerDemo from "@/components/examples/date-picker-demo"
+import AccordionDemo from "@/components/examples/accordion-demo"
+import NavigationMenuDemo from "@/components/examples/navigation-menu-demo"
+import SwitchDemo from "@/components/examples/switch-demo"
+import SelectDemo from "@/components/examples/select-demo"
+import ToggleGroupDemo from "@/components/examples/toggle-group-demo"
+import SeparatorDemo from "@/components/examples/separator-demo"
+import AspectRatioDemo from "@/components/examples/aspect-ratio-demo"
+import PopoverDemo from "@/components/examples/popover-demo"
+import ToastDemo from "@/components/examples/toast-demo"
+import TooltipDemo from "@/components/examples/tooltip-demo"
+import SheetDemo from "@/components/examples/sheet-demo"
+import ProgressDemo from "@/components/examples/progress-demo"
+import CommandDemo from "@/components/examples/command-demo"
+import RadioGroupDemo from "@/components/examples/radio-group-demo"
+import ContextMenuDemo from "@/components/examples/context-menu-demo"
+import DropdownMenuDemo from "@/components/examples/dropdown-menu-demo"
+import AlertDialogDemo from "@/components/examples/alert-dialog-demo"
+import DialogDemo from "@/components/examples/dialog-demo"
+import BadgeDemo from "@/components/examples/badge-demo"
+import BadgeSecondary from "@/components/examples/badge-secondary"
+import BadgeDestructive from "@/components/examples/badge-destructive"
+import BadgeOutline from "@/components/examples/badge-outline"
+import SkeletonDemo from "@/components/examples/skeleton-demo"
+import CollapsibleDemo from "@/components/examples/collapsible-demo"
+import ToggleDemo from "@/components/examples/toggle-demo"
+import ToggleOutline from "@/components/examples/toggle-outline"
+import ToggleDisabled from "@/components/examples/toggle-disabled"
+import ToggleWithText from "@/components/examples/toggle-with-text"
+import ScrollAreaDemo from "@/components/examples/scroll-area-demo"
 
 export default function ExamplesPage() {
   return (
@@ -84,6 +113,75 @@ export default function ExamplesPage() {
             </ComponentWrapper>
             <ComponentWrapper>
               <DatePickerDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <AccordionDemo />
+            </ComponentWrapper>
+            <ComponentWrapper className="[&_ul>li:last-child]:hidden">
+              <NavigationMenuDemo />
+            </ComponentWrapper>
+            <ComponentWrapper className="justify-between">
+              <SwitchDemo />
+              <SelectDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <ToggleGroupDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <SeparatorDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <AspectRatioDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <PopoverDemo />
+              <ToastDemo />
+            </ComponentWrapper>
+          </div>
+          <div className="grid gap-4">
+            <ComponentWrapper>
+              <TooltipDemo />
+              <SheetDemo />
+              <ProgressDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <CommandDemo />
+            </ComponentWrapper>
+            <ComponentWrapper className="[&>span]:h-[80px] [&>span]:w-[200px]">
+              <RadioGroupDemo />
+              <ContextMenuDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <div className="flex space-x-2">
+                <DropdownMenuDemo />
+                <AlertDialogDemo />
+                <DialogDemo />
+              </div>
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <div className="flex space-x-2">
+                <BadgeDemo />
+                <BadgeSecondary />
+                <BadgeDestructive />
+                <BadgeOutline />
+              </div>
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <SkeletonDemo />
+            </ComponentWrapper>
+            <ComponentWrapper className="[&>div]:w-full">
+              <CollapsibleDemo />
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <div className="flex space-x-2">
+                <ToggleDemo />
+                <ToggleOutline />
+                <ToggleDisabled />
+                <ToggleWithText />
+              </div>
+            </ComponentWrapper>
+            <ComponentWrapper>
+              <ScrollAreaDemo />
             </ComponentWrapper>
           </div>
         </div>

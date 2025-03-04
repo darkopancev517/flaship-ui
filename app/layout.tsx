@@ -6,6 +6,8 @@ import localFont from "next/font/local"
 import type { Metadata, Viewport } from "next"
 
 import { cn } from "@/lib/utils"
+import { Toaster as DefaultToaster } from "@/components/ui/toaster"
+import { Toaster as SonnerToaster } from "@/components/ui/sonner"
 import {
   ThemeProvider,
   ThemeWrapper,
@@ -66,6 +68,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
             {children}
           </ThemeWrapper>
           <ThemeSwitcher />
+          <DefaultToaster />
+          <SonnerToaster />
         </ThemeProvider>
       </body>
     </html>
